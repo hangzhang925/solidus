@@ -2,4 +2,11 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/html/
+    destination: /var/www/solidous/
+  AfterInstall:
+    - location: script/AfterInstall.sh
+#      runas: root
+  ApplicationStart:
+    - location: script/ApplicationStart.sh
+#      runas: root
+
