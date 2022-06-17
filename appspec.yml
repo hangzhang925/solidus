@@ -2,7 +2,15 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/solidus/
+    destination: /var/www/solidus
+permissions:
+  - object: /var/www/solidus
+    owner: root
+    pattern: "*"
+    mode: 775
+    type:
+      - file
+      - directory
 hooks:
   AfterInstall:
     - location: scripts/AfterInstall.sh
