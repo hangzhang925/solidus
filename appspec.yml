@@ -5,9 +5,9 @@ files:
     destination: /var/www/solidus/
 hooks:
   AfterInstall:
-    - location: script/AfterInstall.sh
+    - location: scripts/AfterInstall.sh
 #      runas: root
   ApplicationStart:
-    - location: script/ApplicationStart.sh
+    - location: scripts/ApplicationStart.sh
 #      runas: root
 
