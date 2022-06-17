@@ -2,7 +2,8 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/solidous/
+    destination: /var/www/solidus/
+hooks:
   AfterInstall:
     - location: script/AfterInstall.sh
 #      runas: root
