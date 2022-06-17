@@ -17,6 +17,7 @@ group :backend, :frontend, :core, :api do
   # see https://github.com/solidusio/solidus/issues/3374
   # and https://github.com/rails/sprockets-rails/issues/369
   gem 'sprockets', '~> 3'
+  gem 'sassc', '~> 2.1.0'
 
   platforms :ruby do
     if /mysql/.match?(ENV['DB']) || ENV['DB_ALL']
