@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /var/www/solidous
+#cd /var/www/solidous
 bundle install --path vendor/bundle
 bundle exec rake db:migrate
 bundle exec rake assets:clobber
